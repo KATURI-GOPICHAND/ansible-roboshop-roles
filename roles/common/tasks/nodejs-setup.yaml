@@ -7,5 +7,7 @@
     state: present
 
 - name: install dependencies
+  tags:
+  - dependencies
   community.general.npm:
     path: /app
